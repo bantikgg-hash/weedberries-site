@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Написать в Telegram</title>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: "Segoe UI", Roboto, sans-serif;
+      background: linear-gradient(145deg, #3b1d47, #231126);
+      color: #e9d7f7;
+      overflow: hidden;
+    }
+
+    /* дым слой */
+    .smoke {
+      position: absolute;
+      width: 140%;
+      height: 140%;
+      background: url('https://i.imgur.com/2xOqY7R.png') center/cover no-repeat;
+      opacity: 0.22;
+      filter: blur(12px);
+      animation: float 14s infinite linear;
+    }
+    @keyframes float {
+      from {transform: translate(-40px,-40px);}
+      to {transform: translate(40px,40px);}
+    }
+
+    .card {
+      padding: 35px;
+      border-radius: 26px;
+      background: rgba(43, 24, 50, 0.63);
+      border: 1px solid rgba(255,255,255,0.08);
+      max-width: 420px;
+      text-align: center;
+      backdrop-filter: blur(14px);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.55);
+      position: relative;
+      z-index: 10;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin: 0 0 14px;
+      font-weight: 600;
+      letter-spacing: 0.6px;
+    }
+
+    p {
+      color: #cfb7df;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 26px;
+      padding: 14px 34px;
+      border-radius: 30px;
+      text-decoration: none;
+      background: linear-gradient(135deg,#16a34a,#089950);
+      color: #fff;
+      font-weight: 600;
+      letter-spacing: 0.4px;
+      font-size: 18px;
+      box-shadow: 0 0 22px rgba(20,240,120,0.25);
+      transition: 0.28s ease;
+    }
+
+    .btn:hover {
+      background: linear-gradient(135deg,#22d06a,#10b759);
+      box-shadow: 0 0 32px rgba(20,255,120,0.48);
+      transform: scale(1.1);
+    }
+
+    .tag {
+      margin-top: 18px;
+      font-size: 14px;
+      color: #a07ddd;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="smoke"></div>
+
+  <div class="card">
+    <h1>Привет 👋</h1>
+    <p>Если хочешь — просто напиши мне в Telegram.</p>
+
+    <a class="btn" href="https://t.me/weedberries420" target="_blank">
+      Написать в Telegram
+    </a>
+
+    <div class="tag">420 vibe</div>
+  </div>
+
+</body>
+</html>
