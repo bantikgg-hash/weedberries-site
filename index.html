@@ -11,24 +11,8 @@
       align-items: center;
       justify-content: center;
       font-family: "Segoe UI", Roboto, sans-serif;
-      background: linear-gradient(145deg, #3b1d47, #231126);
+      background: linear-gradient(145deg, #3b1d47, #231126); /* матовый пурпур */
       color: #e9d7f7;
-      overflow: hidden;
-    }
-
-    /* дым слой */
-    .smoke {
-      position: absolute;
-      width: 140%;
-      height: 140%;
-      background: url('https://i.imgur.com/2xOqY7R.png') center/cover no-repeat;
-      opacity: 0.22;
-      filter: blur(12px);
-      animation: float 14s infinite linear;
-    }
-    @keyframes float {
-      from {transform: translate(-40px,-40px);}
-      to {transform: translate(40px,40px);}
     }
 
     .card {
@@ -41,7 +25,6 @@
       backdrop-filter: blur(14px);
       box-shadow: 0 8px 32px rgba(0,0,0,0.55);
       position: relative;
-      z-index: 10;
     }
 
     h1 {
@@ -90,8 +73,6 @@
 </head>
 <body>
 
-  <div class="smoke"></div>
-
   <div class="card">
     <h1>Привет 👋</h1>
     <p>Если хочешь — просто напиши мне в Telegram.</p>
@@ -100,7 +81,7 @@
       Написать в Telegram
     </a>
 
-    <div class="tag">420 vibe</div>
+    <div class="tag">420 VIBE</div>
   </div>
 
 </body>
